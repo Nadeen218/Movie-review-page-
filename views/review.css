@@ -1,0 +1,314 @@
+        /* Navbar styles */
+        header {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            background-color: rgba(0, 0, 0, 0.8);
+            z-index: 999;
+            padding: 15px 0;
+        }
+
+        .navbar {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+
+        .navbar-brand {
+            font-size: 2em;
+            font-family: monospace;
+            color: bisque;
+            text-decoration: none;
+        }
+
+        .navbar-menu-btn {
+            display: none;
+            background: none;
+            border: none;
+            cursor: pointer;
+            padding: 10px;
+        }
+
+        .navbar-menu-btn span {
+            display: block;
+            width: 25px;
+            height: 2px;
+            background-color: white;
+            margin: 5px 0;
+            transition: all 0.3s ease;
+        }
+
+        .navbar-nav {
+            display: flex;
+            list-style: none;
+            margin: 0;
+            padding: 0;
+        }
+
+        .navbar-link {
+            color: white;
+            text-decoration: none;
+            padding: 10px 15px;
+            transition: color 0.3s ease;
+        }
+
+        .navbar-link:hover {
+            color: #8400ff;
+        }
+
+        .search-box {
+            position: relative;
+            display: flex;
+            align-items: center;
+        }
+
+        .btn-search {
+            background: none;
+            border: none;
+            color: white;
+            font-size: 1.2em;
+            cursor: pointer;
+            padding: 5px 10px;
+        }
+
+        .input-search {
+            padding: 8px 15px;
+            border-radius: 20px;
+            border: none;
+            background: rgba(255, 255, 255, 0.2);
+            color: white;
+            outline: none;
+            transition: all 0.3s ease;
+            width: 0;
+            opacity: 0;
+            visibility: hidden;
+        }
+
+        .search-box.active .input-search {
+            width: 200px;
+            opacity: 1;
+            visibility: visible;
+            margin-left: 10px;
+        }
+
+        /* Adjust content padding to account for fixed header */
+        .content {
+            padding-top: 100px;
+        }
+
+        /* Footer styles */
+        footer {
+            background-color: rgba(0, 0, 0, 0.8);
+            color: white;
+            padding: 30px 0;
+            margin-top: 50px;
+        }
+
+        .footer-content {
+            max-width: 100%;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+
+        .footer-copyright {
+            display: flex;
+            justify-content: space-between;
+            max-width: 100%;
+            margin: 20px auto 0;
+            padding: 0 20px;
+            border-top: 1px solid rgba(255, 255, 255, 0.1);
+            padding-top: 20px;
+        }
+
+        .copyright p {
+            margin: 0;
+        }
+
+        .wrapper a {
+            color: white;
+            text-decoration: none;
+            margin-left: 15px;
+        }
+
+        .wrapper a:hover {
+            color: #8400ff;
+        }
+
+        /* Rest of your existing styles... */
+        body,
+        html {
+            height: 100%;
+            margin: 0;
+            font-family: 'Times New Roman', Times, serif;
+        }
+
+        /* Full-screen video background */
+        #background-video {
+            position: fixed;
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            z-index: -2;
+        }
+
+        .overlay {
+            position: fixed;
+            width: 100%;
+            height: 100%;
+            background: rgba(0, 0, 0, 0.5);
+            z-index: -1;
+        }
+
+        /* Content section */
+        .content {
+            position: relative;
+            z-index: 1;
+            text-align: center;
+            color: white;
+            padding: -30px;
+        }
+
+        /* Form styles */
+        form {
+            max-width: 550px;
+            margin: 20px auto;
+            background: rgba(0, 0, 0, 0.8);
+            padding: 20px;
+            border-radius: 10px;
+        }
+
+        .form-group {
+            margin-bottom: 15px;
+            align-items: center;
+        }
+
+        label {
+            display: block;
+            margin-bottom: 5px;
+            font-weight: bold;
+            align-items: center;
+        }
+
+        input,
+        textarea,
+        button {
+            width: 90%;
+            padding: 10px;
+            border: none;
+            border-radius: 5px;
+            font-size: 16px;
+        }
+
+        button {
+            background-color: #8400ff;
+            color: white;
+            cursor: pointer;
+        }
+
+        button:hover {
+            background-color: #333333;
+        }
+
+        /* Review section */
+        #reviews h2 {
+            text-align: center;
+            margin-bottom: 20px;
+            color:rgb(255, 255, 255);
+            font-family: 'Georgia', serif;
+        }
+
+        .review-box {
+            background: rgba(25, 25, 25, 0.9);
+            color: #f0f0f0;
+            padding: 15px 20px;
+            margin: 20px auto;
+            border-left: 5px solid #8400ff;
+            border-radius: 10px;
+            box-shadow: 0 4px 10px rgba(0,0,0,0.5);
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+            max-width: 600px;
+        }
+
+        .review-box:hover {
+            transform: scale(1.02);
+            box-shadow: 0 6px 15px rgba(0,0,0,0.7);
+        }
+
+        .review-header {
+            display: flex;
+            align-items: center;
+            margin-bottom: 10px;
+        }
+
+        .avatar {
+            font-size: 36px;
+            margin-right: 15px;
+            background: #222;
+            border-radius: 50%;
+            width: 50px;
+            height: 50px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            border: 2px solid #ffd700;
+        }
+
+        .review-box h3 {
+            margin: 0;
+            font-size: 1.4em;
+            color: #fff;
+        }
+
+        .year {
+            color: #999;
+            font-size: 0.9em;
+        }
+
+        .rating-stars {
+            margin-top: 5px;
+            font-size: 1.1em;
+            color: #ffd700;
+        }
+
+        .reviewer {
+            margin: 5px 0;
+            color: #ccc;
+        }
+
+        .review-text {
+            font-size: 1.05em;
+            line-height: 1.6;
+            color: #eee;
+            padding-top: 5px;
+        }
+
+        .error {
+            color: #aa0000;
+            font-size: 0.9em;
+            margin-top: 5px;
+            display: block;
+        }
+        
+        /* Success message */
+        .success-message {
+            background: rgba(0, 200, 0, 0.3);
+            border: 1px solid #0f0;
+            padding: 10px;
+            border-radius: 5px;
+            margin-bottom: 20px;
+            max-width: 550px;
+            margin-left: auto;
+            margin-right: auto;
+            display: none;
+        }
+        
+        .review-date {
+            color: #aaa;
+            font-size: 0.8em;
+            margin-top: 10px;
+            display: block;
+        }
